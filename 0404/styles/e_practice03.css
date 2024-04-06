@@ -1,0 +1,20 @@
+div p {
+  color: red;
+}
+
+div > p {
+  color: blue;
+}
+p + p {
+  color: green;
+}
+
+div ~ p {
+  color: yellow;
+}
+
+.list-item + .highlight {
+  color: purple;
+}
+
+ul li ~ .highlight { background-color: lightblue; }

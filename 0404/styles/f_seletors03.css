@@ -1,0 +1,54 @@
+/* [속성] 선택자 */
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+a[href] {
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+a[target="_blank"] {
+  padding: 20px;
+  background-color: green;
+}
+
+/* ! [속성~=값] 선택자 */
+a.flat {
+  background-color: gray;
+  border: 1px solid blue;
+}
+
+a[class~="button"] {
+  border-radius: 10px;
+}
+
+/* ! [속성|=값] 선택자 */
+/* 속성값이 us 이거나 us로 시작하는 요소 */
+a[title|="us"] {
+  background-color: aliceblue;
+}
+
+a[title|="ja"] {
+  background-color: greenyellow;
+}
+
+a[title|="chn"] {
+  background-color: bisque;
+}
+
+/* ! [속성^=값] 선택자 */
+a[href$="hwp"] {
+  background-color: brown;
+}
+
+a[href$="word"] {
+  background-color: aqua;
+}
+
+/*! [속성*=값] 선택자 */
+a[href*="o"] {
+  background-color: blue;
+  color: white;
+}

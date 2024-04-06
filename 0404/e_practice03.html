@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/e_practice03.css">
+  <title>e_practice03.html</title>
+</head>
+<body>
+  <!-- 
+    ! 문제 1
+    : HTML 문서 구조를 참조하여 CSS 선택자들이 적용되는 모든 요소를 선택
+    A. div p { color: red; }
+    ? 하위 선택자
+    ? 모든 p 요소에 스타일 적용
+    B. div > p { color: blue; }
+    ? 자식 선택자
+    ? : paragraph 1 에만 적용
+    C. p + p { color: green; }
+    ? 인접 형제 선택자
+    ? 적용되는 요소 없음 x
+    D. div ~ p { color: yellow; }
+    ? 일반 형제 선택자
+      : 같은 부모를 가지면서 div 요소 다음에 나오는 모든 p요소에 적용
+    ? 적용되는 요소 없음 x
+  -->
+  <div>
+    <p>paragraph1</p>
+    <div>
+      paragraph2
+    </div>
+    <span>
+      <p>paragraph3</p>
+    </span>
+  </div>
+  <!--  
+    ! 문제2
+    : 아래의 CSS 선택자를 사용하는 경우 어떤 요소에 어떤 스타일이 적용되는지 확인
+    
+    .list-item + .highlight { color: purple; }
+    ? 인접 형제 선택자
+    ?item 2에만 스타일 적용
+
+    ul li ~ .highlight { background-color: lightblue; }
+    ? 일반 형제 선택자
+    ? item 2 와 item 3에 적용
+  -->
+  <ul>
+    <li class="list-item">item 1</li>
+    <li class="highlight">item 1</li>
+    <li>item 2</li>
+    <li class="highlight">item 1</li>
+  </ul>
+</body>
+</html>
