@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+}
+
+
+.box {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.px {
+  font-size: 16px;
+  width: 200px;
+}
+
+.rem {
+  /* rem : html 요소의 글자 크기를 기준 */
+  font-size: 1rem;
+  width: 10rem;
+}
+/* 부모 (html)의 클자 크기를 자식(body) 요소가 상속 받음*/
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 16px;
+}
+
+.em {
+  font-size: 1em;
+  width: 10em;
+}
+
+#container {
+  font-size: 20px;
+}
+
+.vw {
+  font-size: 2vw;
+  width: 50vw;
+}
+
+.vh {
+  font-size: 2vh;
+  width: 50vh;
+}
+
+.percent {
+  /* .percent의 부모요소 - #parent */
+  font-size: 50%;
+  width: 50%;
+}
+
+#parent {
+  font-size: 32px;
+  width: 400;
+}
+
+/* 
+*css 변수값 사용 예시 
+
+: root
+- css 에서 html 문서의 루트 요소를 선택하는데 사용
+- css 변수(사용자 정의 속성)의 전역 선언에 유용하게 사용
+  : 전체 문서에 걸쳐서 일관된 스타일 값을 유지하는데 사용
+*/
+:root {
+  /* 크기 변수 지정 */
+  --text-size: 20px ;
+  --small-text-size: 14px ;
+
+  /* 색상 변수 지정  */
+  --primary-color : #3498 ;
+  --secoundary-color : #2eec71 ;
+}
+
+.box {
+  background-color: var(--primary-color);
+  border: 2px solid var(--secoundary-color);
+}
+
+/* 예제 -  px/ vw / em 비교*/
+.wrapper {
+  font-size: 1em;
+  border: 2px solid blue;
+  padding: 20px;
+}
+
+.boxex {
+  border: 3px solid pink;
+  padding: 20px;
+  margin: 10px;
+}
+
+#px {
+  width: 200px;
+}
+
+#vw {
+  width: 10vw;
+}
+
+#em {
+  width: 20em;
+}

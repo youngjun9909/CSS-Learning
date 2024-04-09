@@ -1,0 +1,52 @@
+/* 
+  4. 목록 ul
+  색상 갈색 
+  글자크기 16px
+  목록의 모든 단어를 대문자로 표시
+
+  5. 링크 a
+  색상: 보라색
+  호버 상태일 때 색상 :붉은색
+  방문한 링크 색상 : 회색
+  밑줄 없음
+  글자크기 : 16px
+  글자 간 간격 0.8px
+  텍스트 그림자
+  :회색, 가로 / 세로 각각 2px 떨어진 위치,
+  3px 흐림 정도 사용
+*/
+
+h1 {
+  color: blue;
+  font-size: 36px;
+  text-align: center;
+}
+
+h2 {
+  color: #00ff00;
+  font-size: 28px;
+  text-align: left;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+p{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  line-height: 1.6px;
+  list-style-position: 40px;
+  letter-spacing: 1.2px;
+  word-spacing: 2.4px;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.8;
+  text-shadow: 2px 2px 3px gray;
+}
+
+a:visited {
+  color: gray;
+}
