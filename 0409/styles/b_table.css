@@ -1,0 +1,26 @@
+caption {
+  caption-side: bottom;
+}
+
+table {
+  /* solid : 실선 */
+  border: 1px solid black;
+  /* 수평(가로), 수직(세로) */
+  /* border-spacing: 10px 20px;*/
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid pink;
+}
+
+td {
+  border: 1px solid blue;
+}
+/* 
+! 테이블 스타일 지정의 기본값
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+} 
+*/
