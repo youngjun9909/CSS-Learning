@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>d_layout.html</title>
+  <link rel="stylesheet" href="styles/d_layout.css">
+</head>
+<body>
+  <!-- 
+    ! css Layout
+
+    ? 1. display 속성
+
+    - 속성값
+      1) inline
+      : 블록 레벨 요소 >> 인라인 레벨 요소로 전환
+      : 텍스트나 이미지 등의 연속된 흐름을 유지해야 할 때 사용
+      - 너비, 높이 지정 x
+      - 마진과 패딩이 좌우에만 적용
+
+      2) block 
+      : 인라인 레벨 요소 >> 블록 레벨 요소로 전환
+      : 새로운 줄에서 시작, 부모 요소의 전체 너비를 차지
+      - 너비, 높이, 마진, 패딩 모두 제어 가능
+      - 구조적인 레이아웃 지정 시 사용
+
+      3)inline - block 
+      : 인라인 레벨 요소 + 블록 레벨 요소 속성
+      - 인라인: 다른 요소와 같은 줄에 지정
+      - 블록: 너비와 높이를 지정
+
+      4) none
+      : 해당 요소를 화면에 표시하지 않는 속성
+  -->
+  <div class="block">block element</div>
+  <span class="inline">inline element1 </span>
+  <span class="inline">inline element2 </span>
+  <div class="inline-block">inline-block element</div>
+  <div class="none">none element</div>
+  
+  <hr />
+  <nav>
+    <ul>
+      <li>메뉴1</li>
+      <li>메뉴2</li>
+      <li>메뉴3</li>
+      <li>메뉴4</li>
+    </ul>
+  </nav>
+
+  <hr />
+  <img src="../../image/cat.jpg" alt="cat">
+  <p>삼성은 10일 사직구장에서 열린 '2024 신한 SOL Bank KBO 리그' 롯데 자이언츠와 주중 3연전 2차전에서 10-7로 승리했다. 이날 승리로 팀은 하루 전(9일 사직 삼성전 8-1승) 승리에 이어 위닝시리즈를 완성했다. 4연승 행진을 달리며 시즌 전적은 6승 1무 8패.1982년 KBO 리그 원년구단인 롯데와 삼성. 두 팀은 주중 3연전을 '클래식시리즈'로 진행한다. 키워드는 위닝시리즈와 루징시리즈. 삼성은 위닝시리즈를 만들어야 했고, 반면 롯데는 루징시리즈를 막아야 했다.
+    삼성은 지난 경기 대타로 출전해 3타수 3안타(1홈런) 4타점 1득점으로 활약한 김지찬이 리드오프로 복귀했다. 
+    </p>
+
+    <hr />
+    
+    <!--
+      float 속성의 경우 블록레벨 요소를 전환 시키지 않고, 특징이 유지되면서 요소 위에 공간을 차지하는 것 처럼 표현 
+    -->
+    <div class="left">왼쪽에 뜨는 요소1</div>
+    <div class="right">오른쪽에 뜨는 요소2</div>
+    <!-- 블록 레벨 요소 이지만 인라인 처럼 float 속성 요소의 오른쪽에 배치 -->
+    <div class="clear">float 해제</div>
+  </body>
+</html>
