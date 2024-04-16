@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>b_background.html</title>
+  <style>
+    .background {
+      /* 콘텐츠 크기 */
+      width: 250px;
+      height: 300px;
+      /* 여백 크기 */
+      padding: 20px;
+      /* 마진 크기 */
+      margin: 20px;
+      /* 테두리 지정 */
+      border: 5px dotted #222;
+      
+      /* 
+        배경색 지정
+        -background-clip의 기본값: 
+      */
+      background-color: lightblue;
+      display: inline-block;
+    }
+
+    #border {
+      background-clip: border-box;
+    }
+
+    #padding {
+      background-clip: padding-box;
+    }
+
+    #content {
+      background-clip: content-box;
+    }
+
+    /* background-image */
+    .img {
+      background-image: url(../../image/cat.jpg);
+      width: 100%;
+      height: 1500px;
+    }
+
+    #imgs {
+      width: 100%;
+      height: 100%;
+      background-image: url(../../image/cat.jpg);
+      background-repeat: no-repeat;
+      background-position: 20px 20px;
+    }
+
+    #first {
+      /* width: 1500px;
+      background-color: aliceblue;
+      background-attachment: fixed;
+      background-position: center; */
+
+      background: url(../../image/cat.jpg)  aliceblue fixed center;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <!--
+    ! background 속성
+
+    1. background-color 속성
+      : 배경색 지정
+
+    2. background-clip 속성
+      : 배경색 지정 범위 설정
+
+    3. background-image 속성
+      : 배경색에 이미지를 삽입
+      - 요소의 크기보다 이미지의 크기가 더 작을 경우
+      > 이미지가 가로와 세로로 반족 (공간을 채울때 까지)
+    
+    4. background-repeat 속성
+      : 배경 이미지의 반복을 제어
+
+    5. background-position 속성
+      : 배경 이미지의 위치 조절(수평, 수직의 값)
+
+    6. background-origin 속성
+      : background-clip 과 동일
+      : 기본값이 콘텐츠 영역 까지만 지정
+
+    7. background-attachment 속성
+      : 배경 이미지를 고정
+
+    8. background 속성
+      : 배경에 관련된 모든 속성을 한 버 ㄴ에 입력
+      : 속성값이 다르기 때문에 순서 상관 x
+
+    9. css에서 background-image 사용하는 경우
+        
+
+    -->
+
+  <div id="container">
+    <div class="background" id="border">border까지 배경 지정</div>
+    <div class="background" id="padding">padding까지 배경 지정</div>
+    <div class="background" id="content">content까지 배경 지정</div>
+  </div>
+
+  <hr />
+  <div id="imgs">
+    <div class="img" id="first"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+  </div>
+
+  <hr />
+
+  <div class="back"></div>
+
+  
+</body>
+</html>
