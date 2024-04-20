@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  /* 16px : 1em */
+  margin: 2em auto;
+}
+
+a:link, a:visited {
+  color: #333;
+}
+
+nav ul, aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a:link, nan a:visited {
+  background-color: rgba(207, 232, 220, 0.2);
+  border: 2px solid rgba(79, 185, 227);
+  display: block;
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+}

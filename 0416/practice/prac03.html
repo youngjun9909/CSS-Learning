@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 미디어쿼리</title>
+  <style>
+    .img-gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .imges {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    .imges img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (min-width:768px) {
+      .imges {
+        width: 50%;
+      }
+    }
+    @media screen and (min-width:1024px) {
+      .imges {
+        width: 33.33%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="img-gallery">
+    <div class="imges">
+      <img src="../../../image/cat1.jpg" alt="c">
+      <img src="../../../image/cat2.jpg" alt="c">
+      <img src="../../../image/cat3.jpg" alt="c">
+    </div>
+  </div>
+</body>
+</html>
